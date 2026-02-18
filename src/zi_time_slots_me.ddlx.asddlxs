@@ -1,0 +1,26 @@
+
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'Time Slot',
+    typeNamePlural: 'Time Slots'
+  }
+}
+
+annotate entity ZI_TIME_SLOTS
+    with 
+{
+  @UI.lineItem: [{ position: 10, importance: #HIGH }]
+  @UI.selectionField: [{ position: 10 }]
+  TimeSlot;
+
+  @UI.lineItem: [{ position: 20, importance: #HIGH }]
+  timeslottext;
+
+  @UI.hidden: true
+  starttime;
+
+  @UI.hidden: true
+  endtime;
+    
+}
