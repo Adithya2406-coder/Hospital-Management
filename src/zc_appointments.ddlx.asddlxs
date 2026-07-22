@@ -5,7 +5,7 @@
     typeNamePlural: 'Appointments'
   }
 }
-annotate view entity ZC_APPOINTMENTS with
+annotate view ZC_APPOINTMENTS with
 {
   @EndUserText.label: 'AppointmentID'
   @UI.facet: [ {
